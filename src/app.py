@@ -14,8 +14,6 @@ import mysql.connector
 from werkzeug.utils import secure_filename
 from flask import Flask, redirect, url_for, render_template, request
 from PIL import Image as PILImage
-import googlemaps
-import pandas
 current_location = os.path.dirname(os.path.abspath(__file__))
 # Define a flask app
 app = Flask(__name__)
