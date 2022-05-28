@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<html>
+
+<body>
+    {%for i in Data%} 
+  <p>Prediction: <b>{{i[2]}}</b></p>
+  <h3></h3>
+  <figure class="figure">
+    <img src="data:image/png;base64, {{i[3]}}" class="figure-img img-thumbnail input-image">
+  </figure>
+  {%endfor%}
+
+
+</body>
+</html>
+
+{% endblock %}
